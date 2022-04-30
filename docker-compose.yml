@@ -6,7 +6,7 @@ services:
       - '3307:3307'
     expose:
       - '3307'
-    command: bash -c "mysqld --user=root"
+    command: bash -c "mysqld --initialize --user=root"
     environment:
       - MYSQL_USER= root
     volumes:
